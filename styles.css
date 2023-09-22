@@ -1,0 +1,27 @@
+@import url(cabecalho.css);
+@import url(banner.css);
+
+:root {
+    --dourado: #c99d4e;
+    --azul-escuro: #152665;
+    --cinza-claro: #c1cecf;
+    --azul-turquesa: #07acc3;
+    --preto: #050918;
+    --azul-petróleo: #1186a9;
+    --vermelho: #d41550;
+    --azul-claro: #1398bd;
+    --azul-marinho: #076796;
+    --amarelo: #f9f01f;
+    --branco: #f2f2f2;
+    --fonte-principal: "Poppins";
+    --fundo: linear-gradient(90deg, #076796 35.49%, #07acc3 165.37%);
+    --fonte-secundaria: "Josefin Sans";
+
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}

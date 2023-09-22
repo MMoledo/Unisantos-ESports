@@ -1,0 +1,122 @@
+.banner {
+    background-image: url("https://img.ibxk.com.br/2017/08/09/09171435317395.jpg?ims=328x");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: 100vh;
+    padding: 2rem;
+    /* Torna o corpo igual à altura da tela */
+    /* Efeito de desfoque */
+    transform: scale(1.1);
+    color: var(--branco);
+    position: relative; /* Adicionado */
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--azul-turquesa);
+    mix-blend-mode: multiply;
+    z-index: -1; /* Adicionado */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Cor com transparência (aqui é preto com 50% de transparência) */
+}
+
+
+/* Estilos para o conteúdo no topo da imagem de fundo */
+.conteudo__sobre {
+    /* From https://css.glass */
+    background: rgba(93, 77, 247, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    margin: 1rem;
+    /* Garante que o conteúdo apareça acima do fundo desfocado. */
+}
+
+.conteudo__titulo {
+    padding: 1rem;
+    align-self: flex-start;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.conteudo__texto {
+    padding: 0 1rem 1rem 1rem;
+    align-self: flex-start;
+    font-size: 0.8rem;
+
+}
+
+.conteudo__video {
+    margin: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(93, 77, 247, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    padding-bottom: 1rem;
+}
+
+.conteudo__video iframe {
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Jogos {
+    background: rgba(93, 77, 247, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin: 1rem;
+}
+
+.Jogos__caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Jogos__imagem {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.Jogos__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+}
