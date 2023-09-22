@@ -1,10 +1,11 @@
-@import url(cabecalho.css);
-@import url(banner.css);
+@import url(header.css);
+@import url(container.css);
+@import url(jogos.css);
 
 :root {
     --dourado: #c99d4e;
     --azul-escuro: #152665;
-    --cinza-claro: #c1cecf;
+    --cinza-claro: #d4dfdf;
     --azul-turquesa: #07acc3;
     --preto: #050918;
     --azul-petróleo: #1186a9;
@@ -14,14 +15,17 @@
     --amarelo: #f9f01f;
     --branco: #f2f2f2;
     --fonte-principal: "Poppins";
-    --fundo: linear-gradient(90deg, #076796 35.49%, #07acc3 165.37%);
+    --fundo: linear-gradient(180deg, #050918 40.49%, #152665 165.37%);
     --fonte-secundaria: "Josefin Sans";
-
 }
 
 body {
-    background-color: var(--cor-de-fundo);
+    background-image: var(--fundo);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
+    color: var(--branco);
 }

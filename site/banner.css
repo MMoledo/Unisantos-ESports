@@ -9,7 +9,13 @@
     /* Efeito de desfoque */
     transform: scale(1.1);
     color: var(--branco);
-    position: relative; /* Adicionado */
+    position: relative;
+    /* Adicionado */
+    margin-bottom: 2.9rem;
+    -webkit-box-shadow: 0px 0px 52px 25px rgba(21,38,101,1);
+    -moz-box-shadow: 0px 0px 52px 25px rgba(21,38,101,1);
+    box-shadow: 0px 0px 52px 25px rgba(21,38,101,1);
+
 }
 
 .banner::after {
@@ -21,7 +27,8 @@
     left: 0;
     background-color: var(--azul-turquesa);
     mix-blend-mode: multiply;
-    z-index: -1; /* Adicionado */
+    z-index: -1;
+    /* Adicionado */
 }
 
 .overlay {
@@ -48,7 +55,7 @@
     flex-direction: column;
     justify-content: center;
     z-index: 1;
-    margin: 1rem;
+    margin: 0 1rem 1rem 1rem;
     /* Garante que o conteúdo apareça acima do fundo desfocado. */
 }
 
@@ -82,7 +89,7 @@
     flex-direction: column;
     justify-content: center;
     z-index: 1;
-    padding-bottom: 1rem;
+    padding: 0.5rem;
 }
 
 .conteudo__video iframe {

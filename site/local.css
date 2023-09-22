@@ -1,0 +1,9 @@
+.Local__container {
+    background: url("https://www.unisantos.br/wp-content/themes/tema-unisantos/images/idilio.jpg") no-repeat;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    width: 100%;
+    min-height: 240px;
+}

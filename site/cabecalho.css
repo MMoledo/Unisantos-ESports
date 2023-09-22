@@ -34,7 +34,9 @@
     line-height: 2rem;
 
 }
-
+.botoes{
+    display: flex;
+}
 .cabecalho__botao {
     text-decoration: none;
     font-size: 1.2rem;

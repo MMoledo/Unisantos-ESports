@@ -1,0 +1,89 @@
+.container__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.2rem;
+    padding: 0 2rem;
+
+}
+
+.container {
+    overflow: hidden;
+    /* Isso vai esconder qualquer coisa que ultrapasse os limites do container. */
+}
+
+.container__background {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+
+.container__background::before {
+    gap: 1rem;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(img/teclado-de-jogos-para-objeto-monocromatico-de-vetor-de-pc-ou-elemento-de-design-isolado-no-fundo-branco_258353-871-removebg-preview.png);
+    /* Insira o URL da sua imagem aqui */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    /* Ajuste a opacidade conforme necessário, 0.5 é 50% de opacidade */
+    transform: rotate(10deg) scale(1.3);
+    z-index: -1;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+
+.container__info h1 {
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+
+.container__info p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.cabecalho__botao {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.INSCREVA {
+    color: var(--preto);
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #f2f2f2;
+    transition: 0.3s;
+    border: 2px solid var(--branco);
+    padding: 1rem 2rem;
+    box-shadow: 0px 0px 9px 0px rgb(255, 255, 255);
+    border-radius: 24px;
+}
+
+.CONFIRA {
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 2px solid var(--branco);
+    padding: 1rem 1rem;
+    border-radius: 24px;
+    box-shadow: 0px 0px 9px 0px rgb(255, 255, 255);
+}
+
+.CONFIRA:hover,
+.INSCREVA:hover {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+}
