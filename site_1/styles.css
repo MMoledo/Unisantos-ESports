@@ -4,6 +4,8 @@
 @import url(informacoes.css);
 @import url(Datas.css);
 @import url(fundos.css);
+@import url(chaveamento.css);
+@import url(footer.css);
 
 :root {
     --dourado: #c99d4e;
@@ -18,7 +20,7 @@
     --amarelo: #f9f01f;
     --branco: #f2f2f2;
     --fonte-principal: "Poppins";
-    --fundo: linear-gradient(180deg, #050918 40.49%, #152665 165.37%);
+    --fundo: linear-gradient(180deg, #1186A9  40.49%, #A1960E 190.37%);
     --fonte-secundaria: "Josefin Sans";
 }
 
@@ -31,7 +33,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: var(--branco);
-    padding: 2rem;
+    padding: 1rem;
 }
 
 body,

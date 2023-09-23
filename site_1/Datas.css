@@ -8,6 +8,7 @@
 .Datas__titulo {
     font-size: 1.5rem;
     font-weight: 700;
+    text-align: center;
 }
 
 .Datas__lista {
@@ -25,8 +26,9 @@
     width: 140%;
     right: -30vw;
     position: relative;
-    background-color: var(--dourado);
+    background-color: #A1960E;
     border: 0.1px solid var(--preto);
+    font-weight: 700;
     color: white;
     padding: 1rem;
     transform: skewX(-20deg);
@@ -34,16 +36,18 @@
 
 .Datas__itens:nth-child(odd) {
     justify-content: flex-end;
-    background-color: #120946;
+    background-color: #107291;
     transform: skewX(20deg);
     left: -30vw;
 }
 
 .Datas__texto_1 {
+    font-weight: 700;
     transform: skewX(-20deg);
 }
 
 .Datas__texto_2 {
+    font-weight: 700;
     transform: skewX(20deg);
 }
 
@@ -61,7 +65,7 @@
 }
 
 
-.borda_a{
+.borda_a {
     transform: skewX(20deg);
 }
 

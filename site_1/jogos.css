@@ -6,6 +6,7 @@
 .jogos__titulo {
     font-size: 1.5rem;
     padding: 1rem 0 2rem 0rem;
+    text-align: center;
     font-weight: 700;
 }
 
@@ -17,7 +18,7 @@
 
 .lista__item img {
     border-radius: 20%;
-    box-shadow: 0px 0px 5px 5px rgb(42, 44, 71);
+    box-shadow: 20px 23px 29px -21px rgba(0,0,0,0.75);
     width: 30vw; /* Ajuste conforme necessário */
     height: 30vw;
 
