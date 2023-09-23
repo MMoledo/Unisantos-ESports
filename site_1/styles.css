@@ -1,6 +1,9 @@
 @import url(header.css);
 @import url(container.css);
 @import url(jogos.css);
+@import url(informacoes.css);
+@import url(Datas.css);
+@import url(fundos.css);
 
 :root {
     --dourado: #c99d4e;
@@ -28,4 +31,6 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: var(--branco);
+    padding: 2rem;
+    overflow: hidden;
 }
