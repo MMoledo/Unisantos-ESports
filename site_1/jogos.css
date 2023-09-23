@@ -1,6 +1,6 @@
 .jogos {
     margin-top: 14rem;
-    
+
 }
 
 .jogos__titulo {
@@ -17,12 +17,11 @@
 }
 
 .lista__item img {
-    border-radius: 20%;
-    box-shadow: 20px 23px 29px -21px rgba(0,0,0,0.75);
-    width: 30vw; /* Ajuste conforme necessário */
+    width: 30vw;
     height: 30vw;
 
 }
+
 
 .lista__item {
     display: flex;
