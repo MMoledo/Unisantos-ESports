@@ -1,43 +1,40 @@
 .divisor-imagem {
-    overflow: hidden;
     background-image: url('img/fundo_tecnologia.png');
     background-repeat: no-repeat;
-    width: 250%;
+    width: 500%;
     height: 100%;
     scale: 0.4;
     position: absolute;
-    top: 65%;
-    left: -110%;
-    transform: translate(0, -50%);
+    top: 10%;
+    left: -220%;
     opacity: 0.2;
     z-index: -1;
 }
 
 .divisor-imagem_2 {
-    overflow: hidden;
     background-image: url('img/quadradro.png');
     background-repeat: no-repeat;
     width: 250%;
     height: 100%;
     scale: 0.4;
     position: absolute;
-    top: 110%;
-    left: 0%;
+    top: 50%;
+    left: -10%;
     transform: translate(0, -50%);
     opacity: 0.4;
     z-index: -1;
 }
 
 .divisor-imagem_3 {
-    overflow: hidden;
+
     background-image: url('img/furacao.png');
     background-repeat: no-repeat;
     width: 250%;
     height: 100%;
     scale: 0.4;
     position: absolute;
-    top: 166%;
-    left: -60%;
+    top: 70%;
+    left: -80%;
     transform: translate(0, -50%);
     opacity: 0.4;
     z-index: -1;

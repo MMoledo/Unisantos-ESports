@@ -3,7 +3,7 @@
 @import url(jogos.css);
 @import url(informacoes.css);
 @import url(Datas.css);
-/* @import url(fundos.css); */
+@import url(fundos.css);
 
 :root {
     --dourado: #c99d4e;
@@ -32,4 +32,13 @@ body {
     font-weight: 400;
     color: var(--branco);
     padding: 2rem;
+}
+
+body,
+html {
+    overflow-x: hidden;
+    /* Esconde o overflow horizontal */
+    max-width: 100vw;
+    /* Define a largura máxima como a largura da viewport */
+    position: relative;
 }
