@@ -22,11 +22,10 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 10px;
     width: 140%;
     right: -30vw;
     position: relative;
-    background-color: #A1960E;
+    background-color: var(--dourado);
     border: 0.1px solid var(--preto);
     font-weight: 700;
     color: white;
@@ -43,6 +42,7 @@
 
 .Datas__texto_1 {
     font-weight: 700;
+    text-align: center;
     transform: skewX(-20deg);
 }
 

@@ -16,16 +16,31 @@
     justify-content: space-around;
 }
 
-.lista__item img {
-    width: 30vw;
-    height: 30vw;
-
-}
-
-
 .lista__item {
+    flex: 1;
+    /* Faz com que cada item da lista ocupe o mesmo espaço */
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    word-wrap: break-word;
+    /* Permite a quebra de palavras */
+    text-align: center;
+}
+
+.lista__item img {
+    width: 80%;
+    /* Alterado para garantir que a imagem caiba no contêiner do item da lista */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.lista__item h3 {
+    text-align: center;
+    word-wrap: break-word;
+    /* Permite que o texto quebre para a próxima linha */
+    overflow-wrap: break-word;
+    /* Para navegadores que não suportam word-wrap */
 }

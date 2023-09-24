@@ -1,4 +1,31 @@
 .footer{
-    background-color: darkblue;
-    padding: 2rem;
+    background-color: var(--azul-marinho);
+    border-top: 1px solid var(--preto);
+    padding: 1rem;
+}
+
+.footer__info{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin: 0.2rem 0;
+}
+
+.footer__icon img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.footer__info_icon{
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer p{
+    color: var(--branco);
+    font-size: 1.2rem;
+    font-weight: 700;
 }
