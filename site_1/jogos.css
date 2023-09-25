@@ -5,7 +5,7 @@
 
 .jogos__titulo {
     font-size: 1.5rem;
-    padding: 1rem 0 2rem 0rem;
+    padding: 2rem 0 2rem 0rem;
     text-align: center;
     font-weight: 700;
 }
@@ -13,7 +13,9 @@
 .lista__jogos {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: space-between;
 }
 
 .lista__item {
@@ -29,7 +31,7 @@
 }
 
 .lista__item img {
-    width: 80%;
+    width: 60%;
     /* Alterado para garantir que a imagem caiba no contêiner do item da lista */
     height: auto;
     /* Mantém a proporção da imagem */
@@ -40,6 +42,10 @@
 .lista__item h3 {
     text-align: center;
     word-wrap: break-word;
+    font-weight: 500;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    padding: 0.5rem;
     /* Permite que o texto quebre para a próxima linha */
     overflow-wrap: break-word;
     /* Para navegadores que não suportam word-wrap */
