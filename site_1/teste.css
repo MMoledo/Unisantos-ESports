@@ -9,3 +9,8 @@
     height: 100vh;
     scroll-snap-align: start;
 }
+
+.teste_2{
+    height: 30vh;
+    scroll-snap-align: start;
+}

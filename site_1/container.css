@@ -9,6 +9,7 @@
 
 .informacoes__titulo {
     text-align: center;
+
 }
 
 .container {
@@ -50,6 +51,8 @@
 .container__info h1 {
     font-size: 2rem;
     font-weight: 700;
+    -webkit-filter: drop-shadow(2px 2px 2px #222);
+    filter: drop-shadow(2px 2px 2px #222);
     text-align: center;
     width: 80%;
 
