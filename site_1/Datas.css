@@ -2,7 +2,59 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    position: relative;
+}
 
+.Datas::before {
+    content: "";
+    /* Conteúdo vazio para o pseudo-elemento */
+    position: absolute;
+    /* Posicionamento absoluto para a imagem de fundo */
+    top: 20%;
+    /* Alinhado ao topo do container pai */
+    left: 00%;
+    /* Alinhado à metade da largura do container pai */
+    width: 100%;
+    /* Largura do pseudo-elemento */
+    height: 100%;
+    /* Altura do pseudo-elemento */
+    background-image: url('img/bolinhas.png');
+    /* Imagem de fundo */
+    background-size: 150vw;
+    /* Tamanho da imagem de fundo */
+    background-repeat: no-repeat;
+    /* Não repetir a imagem de fundo */
+    background-position: center;
+    /* Centralizar a imagem de fundo */
+    z-index: -1;
+    opacity: 0.3;
+    /* Posicionar abaixo do conteúdo do container pai */
+}
+
+.Datas::after {
+    content: "";
+    /* Conteúdo vazio para o pseudo-elemento */
+    position: absolute;
+    /* Posicionamento absoluto para a imagem de fundo */
+    top: -20%;
+    /* Alinhado ao topo do container pai */
+    left: 00%;
+    /* Alinhado à metade da largura do container pai */
+    width: 100%;
+    /* Largura do pseudo-elemento */
+    height: 100%;
+    /* Altura do pseudo-elemento */
+    background-image: url('img/bolinhas.png');
+    /* Imagem de fundo */
+    background-size: 150vw;
+    /* Tamanho da imagem de fundo */
+    background-repeat: no-repeat;
+    /* Não repetir a imagem de fundo */
+    background-position: center;
+    /* Centralizar a imagem de fundo */
+    z-index: -1;
+    opacity: 0.4;
+    /* Posicionar abaixo do conteúdo do container pai */
 }
 
 .Datas__titulo {

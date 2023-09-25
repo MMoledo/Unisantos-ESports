@@ -1,6 +1,58 @@
 .jogos {
     margin-top: 14rem;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    position: relative;
+}
 
+.jogos::before {
+    content: "";
+    /* Conteúdo vazio para o pseudo-elemento */
+    position: absolute;
+    /* Posicionamento absoluto para a imagem de fundo */
+    top: 20%;
+    /* Alinhado ao topo do container pai */
+    left: 50%;
+    /* Alinhado à metade da largura do container pai */
+    width: 100%;
+    /* Largura do pseudo-elemento */
+    height: 100%;
+    /* Altura do pseudo-elemento */
+    background-image: url('img/quadradro.png');
+    /* Imagem de fundo */
+    background-size: 100vw;
+    /* Tamanho da imagem de fundo */
+    background-repeat: no-repeat;
+    /* Não repetir a imagem de fundo */
+    background-position: center;
+    /* Centralizar a imagem de fundo */
+    z-index: -1;
+    /* Posicionar abaixo do conteúdo do container pai */
+}
+.jogos::after {
+    content: "";
+    /* Conteúdo vazio para o pseudo-elemento */
+    position: absolute;
+    /* Posicionamento absoluto para a imagem de fundo */
+    top: -20%;
+    /* Alinhado ao topo do container pai */
+    left: -65%;
+    /* Alinhado à metade da largura do container pai */
+    width: 100%;
+    /* Largura do pseudo-elemento */
+    height: 100%;
+    /* Altura do pseudo-elemento */
+    background-image: url('img/fundo_tecnologia.png');
+    /* Imagem de fundo */
+    background-size: 100vw;
+    /* Tamanho da imagem de fundo */
+    background-repeat: no-repeat;
+    /* Não repetir a imagem de fundo */
+    background-position: center;
+    /* Centralizar a imagem de fundo */
+    z-index: -1;
+    opacity: 0.5;
+    /* Posicionar abaixo do conteúdo do container pai */
 }
 
 .jogos__titulo {
