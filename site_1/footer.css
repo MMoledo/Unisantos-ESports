@@ -29,3 +29,23 @@
     font-size: 1.2rem;
     font-weight: 700;
 }
+
+@media (min-width: 1024px) {
+    .footer__icon img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .footer__info_icon{
+        margin: 0.5rem 0 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .footer__texto{
+        font-size: 1.2rem;
+    }
+    .footer p{
+        font-size: 1.5rem;
+    }
+
+}

@@ -23,10 +23,11 @@
     --fonte-principal: "Poppins";
     --fundo: #1186A9;
     --fonte-secundaria: "Josefin Sans";
+    --fundo-gradiante: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(7,103,150,1) 28%, rgba(2,168,226,1) 86%, rgba(0,212,255,1) 100%);
 }
 
 body {
-    background-color: var(--fundo);
+    background: var(--fundo-gradiante);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -43,4 +44,26 @@ html {
     max-width: 100vw;
     /* Define a largura máxima como a largura da viewport */
     position: relative;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(24, 24, 24);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(170, 164, 164);
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(56, 56, 56);
 }

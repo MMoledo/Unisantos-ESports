@@ -12,31 +12,117 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap"
         rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.testando').on('scroll', function () {
+                $('.Home, .Modalidades, .Informações, .Datas_link, .LeagueOfLegends, .Valorant').css('color', '#f2f2f2');
+                var scrollPos = $(this).scrollTop();
+                console.log(scrollPos);
+                if (scrollPos < 1000) {
+                    $('.Home').css('color', '#c99d4e');
+                } else {
+                    if (scrollPos > 1000 && scrollPos < 2000) {
+                        $('.Modalidades').css('color', '#c99d4e');
+                    } else {
+                        if (scrollPos > 2000 && scrollPos < 3000) {
+                            $('.Informações').css('color', '#c99d4e');
+                        } else {
+                            if (scrollPos > 3000 && scrollPos < 4000) {
+                                $('.Datas_link').css('color', '#c99d4e');
+                            } else {
+                                if (scrollPos > 4000 && scrollPos < 5000) {
+                                    $('.LeagueOfLegends').css('color', '#c99d4e');
+                                } else {
+                                    if (scrollPos > 5000 && scrollPos < 6000) {
+                                        $('.Valorant').css('color', '#c99d4e');
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            const mainContent = document.querySelector('.main_content');
+            const secondaryContent = document.querySelector('.secondary_content');
+            const switchInput = document.querySelector('.switch input');
+            const titulo = document.getElementById('titulo'); // Seleciona o elemento do título pelo ID
+
+            // Quando a página carregar, oculte o conteúdo secundário
+            secondaryContent.style.display = 'none';
+
+            switchInput.addEventListener('change', function () {
+                if (this.checked) {
+                    mainContent.style.display = 'none';
+                    secondaryContent.style.display = 'block';
+                    setBGImage('fundo_league', 'url("https://i.pinimg.com/originals/7e/8e/ba/7e8eba8818971329dd1fdbaa8480b869.jpg")');
+                    titulo.textContent = 'Valorant'; // Altera o título para Valorant
+                    titulo.style.color = '#fd4556';
+                } else {
+                    mainContent.style.display = 'block';
+                    secondaryContent.style.display = 'none';
+                    setBGImage('fundo_league', 'url("https://images.contentstack.io/v3/assets/blt370612131b6e0756/bltc3276ed381e1ae32/5fad83693cdbef7187ce6a62/LoL_WR_KV_Wallpaper_1440x2960.jpg")');
+                    titulo.textContent = 'League Of Legends'; // Altera o título para League Of Legends
+                    titulo.style.color = '#c99d4e';
+
+                }
+            });
+
+            function setBGImage(className, url) {
+                const style = document.createElement('style');
+                style.innerHTML = `.${className}::before { background-image: ${url} !important; }`;
+                document.head.appendChild(style);
+            }
+        });
+
+
+
+    </script>
+
     <title>UniSantos E-Sports</title>
 </head>
 
 <body class="testando teste">
-    <section class="container teste">
+    <section class="container teste" id="Home">
         <header class="header">
             <img class="header__logo" src="img/logo_1.png" alt="Logo">
+            <div class="header__pc">
+                <ul class="header__lista">
+                    <li class="header__item"><a class="header__link Home" href="#Home">Home</a></li>
+                    <li class="header__item"><a class="header__link Modalidades" href="#Modalidades">Modalidades</a>
+                    </li>
+                    <li class="header__item"><a class="header__link Informações" href="#Informações">Informações</a>
+                    </li>
+                    <li class="header__item"><a class="header__link Datas_link" href="#Datas">Datas</a></li>
+                    <li class="header__item"><a class="header__link LeagueOfLegends" href="#LOL">Chaveamento</a>
+                    </li>
+                </ul>
+            </div>
         </header>
         <div class="container__info">
             <div class="container__background">
-                <h1>O Campeonato de <span class="nowrap">E-Sports</span> da UniSantos</h1>
+                <h1><span class="nowrap">O Campeonato</span> de <span class="nowrap">E-Sports</span> da UniSantos</h1>
                 <p class="container__texto">
                     O Campeonato UniSantos E-Sports é uma promoção da Associação Acadêmica de Tecnologia da Informação
                     (A.A.T.I), pertencente a Universidade Católica de Santos, com a finalidade de desenvolver a
                     integração entre os alunos de mesma e de distintas universidades através de uma competição saudável
                     de <span class="nowrap">E-Sports</span>.
                 </p>
+                <div class="caixa__botao">
+                    <a href="#" class="container__botao INSCREVA">INSCREVA SEU TIME</a>
+                    <a href="#" class="container__botao CONFIRA">CONFIRA O REGULAMENTO</a>
+                </div>
             </div>
-            <div class="caixa__botao">
-                <a href="#" class="container__botao INSCREVA">INSCREVA SEU TIME</a>
-                <a href="#" class="container__botao CONFIRA">CONFIRA O REGULAMENTO</a>
-            </div>
+            <img class="header__logo__pc" src="img/logo_1.png" alt="Logo">
+
         </div>
     </section>
-    <section class="jogos teste">
+
+
+    <section class="jogos teste" id="Modalidades">
         <h2 class="jogos__titulo">Modalidades</h2>
         <ul class="lista__jogos">
             <li class="lista__item">
@@ -54,129 +140,146 @@
         </ul>
     </section>
 
-    <section class="informacoes teste">
+    <section class="informacoes teste" id="Informações">
         <h2 class="informacoes__titulo">Informações</h2>
         <ul class="informacoes__lista">
-            <li class="informacoes__itens"><img src="img/Free.png">Inscrições Gratuitas</li>
-            <li class="informacoes__itens"><img src="img/Final.png">Final Presencial</li>
-            <li class="informacoes__itens"><img src="img/Empresas.png">Empresas Parceiras</li>
-            <li class="informacoes__itens "><img src="img/Premiacao.png" class="quebra">+ R$2000 em premiação</li>
+            <li class="informacoes__itens"><img src="img/Free.png">
+                <p>Inscrições Gratuitas</p>
+                </p>
+            </li>
+            <li class="informacoes__itens"><img src="img/Final.png">
+                <p>Final Presencial</p>
+            </li>
+            <li class="informacoes__itens"><img src="img/Empresas.png">
+                <p>Empresas Parceiras</p>
+            </li>
+            <li class="informacoes__itens "><img src="img/Premiacao.png" class="quebra">
+                <p>+ de R$2000 em premiação</p>
+            </li>
         </ul>
     </section>
-    <section class="Datas teste">
+    <section class="Datas teste" id="Datas">
         <h2 class="Datas__titulo">Datas</h2>
         <ul class="Datas__lista">
             <li class="Datas__itens"><img src="img/cadastro.png">
-                <p class="Datas__texto_1">Inscrições até 02/10</p>
+                <p class="Datas__texto">Inscrições até 02/10</p>
             </li>
             <li class="Datas__itens">
                 <p class="borda borda_1">16</p>
-                <p class="Datas__texto_2">Oitavas 07/10 | 08/10</p>
+                <p class="Datas__texto">Oitavas 07/10 | 08/10</p>
             </li>
             <li class="Datas__itens">
                 <p class="borda">8</p>
-                <p class="Datas__texto_1">Quartas 12/10 | 13/10</p>
+                <p class="Datas__texto">Quartas 12/10 | 13/10</p>
             </li>
             <li class="Datas__itens">
                 <p class="borda borda_a">4</p>
-                <p class="Datas__texto_2">Semi 14/10 | 15/10</p>
+                <p class="Datas__texto">Semi 14/10 | 15/10</p>
             </li>
             <li class="Datas__itens"><img src="img/Final.png">
-                <p class="Datas__texto_1">Final 20/10</p>
+                <p class="Datas__texto">Final 20/10</p>
             </li>
         </ul>
     </section>
-    <section class="chaveamento teste fundo_league">
-        <h2 class="jogos__titulo">Chaveamento <p class="titulo__league">League Of Legends</p>
+    <section class="chaveamento teste fundo_league" id="LOL">
+
+        <h2 class="jogos__titulo__Chave">Chaveamento <p class="titulo__league" id="titulo">League Of Legends</p>
         </h2>
-        <ul class="jogos__lista">
-            <li class="jogos__itens">
-                <p class="Time__1">--A Definir--</p>
-                <p class="X">X</p>
-                <p class="Time__2">--A Definir--</p>
-            </li>
-            <li class="jogos__itens">
-                <p class="Time__1">--A Definir--</p>
-                <p class="X">X</p>
-                <p class="Time__2">--A Definir--</p>
-            </li>
-            <li class="jogos__itens">
-                <p class="Time__1">--A Definir--</p>
-                <p class="X">X</p>
-                <p class="Time__2">--A Definir--</p>
-            </li>
-            <li class="jogos__itens">
-                <p class="Time__1">--A Definir--</p>
-                <p class="X">X</p>
-                <p class="Time__2">--A Definir--</p>
-            </li>
-            <li class="jogos__itens">
-                <p class="Time__1">--A Definir--</p>
-                <p class="X">X</p>
-                <p class="Time__2">--A Definir--</p>
-            </li>
-            <li class="jogos__itens">
-                <p class="Time__1">--A Definir--</p>
-                <p class="X">X</p>
-                <p class="Time__2">--A Definir--</p>
-            </li>
-            <li class="jogos__itens">
-                <p class="Time__1">--A Definir--</p>
-                <p class="X">X</p>
-                <p class="Time__2">--A Definir--</p>
-            </li>
-            <li class="jogos__itens">
-                <p class="Time__1">--A Definir--</p>
-                <p class="X">X</p>
-                <p class="Time__2">--A Definir--</p>
-            </li>
-        </ul>
-    </section>
-    <section class="chaveamento teste fundo_val">
-        <h2 class="jogos__titulo">Chaveamento <p class="titulo__Valorant">Valorant</p>
-        </h2>
-        <ul class="jogos__lista">
-            <li class="jogos__itens">
-                <p class="Time__1">--A Definir--</p>
-                <p class="X">X</p>
-                <p class="Time__2">--A Definir--</p>
-            </li>
-            <li class="jogos__itens">
-                <p class="Time__1">--A Definir--</p>
-                <p class="X">X</p>
-                <p class="Time__2">--A Definir--</p>
-            </li>
-            <li class="jogos__itens">
-                <p class="Time__1">--A Definir--</p>
-                <p class="X">X</p>
-                <p class="Time__2">--A Definir--</p>
-            </li>
-            <li class="jogos__itens">
-                <p class="Time__1">--A Definir--</p>
-                <p class="X">X</p>
-                <p class="Time__2">--A Definir--</p>
-            </li>
-            <li class="jogos__itens">
-                <p class="Time__1">--A Definir--</p>
-                <p class="X">X</p>
-                <p class="Time__2">--A Definir--</p>
-            </li>
-            <li class="jogos__itens">
-                <p class="Time__1">--A Definir--</p>
-                <p class="X">X</p>
-                <p class="Time__2">--A Definir--</p>
-            </li>
-            <li class="jogos__itens">
-                <p class="Time__1">--A Definir--</p>
-                <p class="X">X</p>
-                <p class="Time__2">--A Definir--</p>
-            </li>
-            <li class="jogos__itens">
-                <p class="Time__1">--A Definir--</p>
-                <p class="X">X</p>
-                <p class="Time__2">--A Definir--</p>
-            </li>
-        </ul>
+        <div class="chaveamento__caixa">
+            <h3>Alterar Jogo</h3>
+            <label class="switch">
+                <input type="checkbox" id="switchInput">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="main_content">
+            <ul class="jogos__lista">
+                <li class="jogos__itens">
+                    <p class="Time__1">--A Definir--</p>
+                    <p class="X">X</p>
+                    <p class="Time__2">--A Definir--</p>
+                </li>
+                <li class="jogos__itens">
+                    <p class="Time__1">--A Definir--</p>
+                    <p class="X">X</p>
+                    <p class="Time__2">--A Definir--</p>
+                </li>
+                <li class="jogos__itens">
+                    <p class="Time__1">--A Definir--</p>
+                    <p class="X">X</p>
+                    <p class="Time__2">--A Definir--</p>
+                </li>
+                <li class="jogos__itens">
+                    <p class="Time__1">--A Definir--</p>
+                    <p class="X">X</p>
+                    <p class="Time__2">--A Definir--</p>
+                </li>
+                <li class="jogos__itens">
+                    <p class="Time__1">--A Definir--</p>
+                    <p class="X">X</p>
+                    <p class="Time__2">--A Definir--</p>
+                </li>
+                <li class="jogos__itens">
+                    <p class="Time__1">--A Definir--</p>
+                    <p class="X">X</p>
+                    <p class="Time__2">--A Definir--</p>
+                </li>
+                <li class="jogos__itens">
+                    <p class="Time__1">--A Definir--</p>
+                    <p class="X">X</p>
+                    <p class="Time__2">--A Definir--</p>
+                </li>
+                <li class="jogos__itens">
+                    <p class="Time__1">--A Definir--</p>
+                    <p class="X">X</p>
+                    <p class="Time__2">--A Definir--</p>
+                </li>
+            </ul>
+        </div>
+        <div class="secondary_content">
+            <ul class="jogos__lista">
+                <li class="jogos__itens">
+                    <p class="Time__1">--A Definir--</p>
+                    <p class="X">X</p>
+                    <p class="Time__2">--A Definir--</p>
+                </li>
+                <li class="jogos__itens">
+                    <p class="Time__1">--A Definir--</p>
+                    <p class="X">X</p>
+                    <p class="Time__2">--A Definir--</p>
+                </li>
+                <li class="jogos__itens">
+                    <p class="Time__1">--A Definir--</p>
+                    <p class="X">A</p>
+                    <p class="Time__2">--A Definir--</p>
+                </li>
+                <li class="jogos__itens">
+                    <p class="Time__1">--A Definir--</p>
+                    <p class="X">X</p>
+                    <p class="Time__2">--A Definir--</p>
+                </li>
+                <li class="jogos__itens">
+                    <p class="Time__1">--A Definir--</p>
+                    <p class="X">X</p>
+                    <p class="Time__2">--A Definir--</p>
+                </li>
+                <li class="jogos__itens">
+                    <p class="Time__1">--A Definir--</p>
+                    <p class="X">X</p>
+                    <p class="Time__2">--A Definir--</p>
+                </li>
+                <li class="jogos__itens">
+                    <p class="Time__1">--A Definir--</p>
+                    <p class="X">X</p>
+                    <p class="Time__2">--A Definir--</p>
+                </li>
+                <li class="jogos__itens">
+                    <p class="Time__1">--A Definir--</p>
+                    <p class="X">X</p>
+                    <p class="Time__2">--A Definir--</p>
+                </li>
+            </ul>
+        </div>
     </section>
     <footer class="footer teste_2">
         <p>Contato</p>
@@ -195,6 +298,7 @@
             <li class="footer__texto">A.A.T.I - Associação Acadêmica de Tecnologia da Informação</p>
             <li class="footer__texto">Telefone: (13) 3205-5555</p>
         </ul>
+    </footer>
 </body>
 
 </html>

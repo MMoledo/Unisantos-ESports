@@ -117,8 +117,69 @@
     padding: 0.3rem 0.5rem;
 }
 
-
-
 .borda_1 {
     padding: 0.3rem;
+}
+
+@media (min-width: 1024px) {
+
+    .Datas {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        position: relative;
+        margin-top: 4rem;
+    }
+
+    .Datas__titulo {
+        font-size: 3rem;
+        padding-top: 5rem;
+        font-weight: 700;
+        text-align: center;
+        -webkit-filter: drop-shadow(2px 2px 2px #222);
+        filter: drop-shadow(2px 2px 2px #222);
+    }
+
+    .Datas__itens {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        width: 70%;
+        position: relative;
+        -webkit-filter: drop-shadow(2px 2px 2px #222);
+        filter: drop-shadow(2px 2px 2px #222);
+        border: 3px solid #107291;
+        border-radius: 24px;
+        font-weight: 700;
+        background: linear-gradient(90deg, rgba(240, 175, 58, 1) 36%, rgba(213, 168, 62, 1) 67%, rgba(158, 118, 47, 1) 99%);
+        color: white;
+        padding: 1.75rem 1rem;
+    }
+
+    .Datas__itens:nth-child(odd) {
+        justify-content: center;
+        border: 2px solid var(--dourado);
+        background: linear-gradient(90deg, rgba(0, 109, 139, 1) 0%, rgba(1, 147, 188, 1) 20%, rgba(1, 176, 218, 1) 38%, rgba(0, 210, 252, 1));
+
+    }
+
+    .Datas__texto {
+        font-weight: 700;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .borda {
+        border: 2px solid var(--branco);
+        border-radius: 24px;
+        padding: 0.25rem 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .borda_1 {
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+
 }

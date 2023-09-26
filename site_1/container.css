@@ -9,7 +9,6 @@
 
 .informacoes__titulo {
     text-align: center;
-
 }
 
 .container {
@@ -39,7 +38,7 @@
     background-position: center;
     opacity: 0.1;
     /* Ajuste a opacidade conforme necessário, 0.5 é 50% de opacidade */
-    transform: rotate(10deg) scale(0.9);
+    transform: rotate(10deg) scale(2);
     z-index: -1;
 }
 
@@ -102,4 +101,157 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+.header__pc,.header__logo__pc{
+    display: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0 2rem 0;
+
+}
+
+.header__logo {
+    margin-top: 1rem;
+    width: 8rem;
+    height: auto;
+}
+
+@media (min-width: 1024px) {
+    .container__info h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        -webkit-filter: drop-shadow(2px 2px 2px #222);
+        filter: drop-shadow(2px 2px 2px #222);
+        text-align: center;
+    }
+
+    .container {
+        padding-top: 9rem;
+    }
+
+    .header__pc,.header__logo__pc {
+        display: block;
+    }
+
+    .header__lista {
+        display: flex;
+        gap: 4rem;
+    }
+
+    .header__link {
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: var(--dourado);
+        -webkit-filter: drop-shadow(2px 2px 2px #222);
+        filter: drop-shadow(2px 2px 2px #222);
+        text-decoration: none;
+        transition: 0.4s;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        padding: 1rem 2rem;
+        z-index: 1000;
+    }   
+
+    .header__logo {
+        display: none;
+    }
+
+    .container__info{
+        display: flex;
+        flex-direction: row;
+        margin-top: 3rem;
+    }
+    .header__logo__pc{
+        width: 40%;
+        height: 40%;
+        padding-right: 4rem;
+        -webkit-filter: drop-shadow(2px 2px 2px #222);
+        filter: drop-shadow(2px 2px 2px #222);
+    }
+    .container__background{
+        width: 50%;
+        padding-left: 4rem;
+    }
+    .container__info h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        -webkit-filter: drop-shadow(2px 2px 2px #222);
+        filter: drop-shadow(2px 2px 2px #222);
+        text-align: center;
+        width: 80%;
+    
+    }
+    
+    .container__info p {
+        padding: 1rem;
+        text-align: justify;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    .caixa__botao {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .INSCREVA {
+        color: var(--preto);
+        font-weight: 700;
+        text-decoration: none;
+        background-color: var(--branco);
+        transition: 0.3s;
+        padding: 1rem 4.745rem;
+        border: 2px solid var(--branco);
+        box-shadow: 0px 0px 9px 0px rgb(255, 255, 255);
+        border-radius: 24px;
+        font-size: 1.2rem;
+    }
+    
+    .CONFIRA {
+        color: var(--branco);
+        font-weight: 700;
+        background-color: var(--dourado);
+    
+        text-decoration: none;
+        transition: 0.3s;
+        border: 2px solid var(--branco);
+        padding: 1rem 3rem;
+        border-radius: 24px;
+        box-shadow: 0px 0px 9px 0px rgb(255, 255, 255);
+        font-size: 1.2rem;
+    }
+    .container__info::before {
+        gap: 1rem;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 40%;
+        bottom: 2rem;
+        left: 0;
+        background-image: url(img/teclado-de-jogos-para-objeto-monocromatico-de-vetor-de-pc-ou-elemento-de-design-isolado-no-fundo-branco_258353-871-removebg-preview.png);
+        /* Insira o URL da sua imagem aqui */
+        background-repeat: no-repeat;
+        background-size: 25rem;
+        background-position: center;
+        opacity: 0.1;
+        /* Ajuste a opacidade conforme necessário, 0.5 é 50% de opacidade */
+        transform: rotate(10deg) scale(1.5);
+        z-index: -1;
+    }
+
 }
