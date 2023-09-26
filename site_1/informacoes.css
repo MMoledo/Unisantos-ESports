@@ -1,6 +1,7 @@
 .informacoes {
     display: flex;
     flex-direction: column;
+
     gap: 2rem;
     position: relative;
     overflow: hidden;
@@ -11,6 +12,7 @@
 .informacoes__titulo {
     z-index: 1;
     font-size: 1.5rem;
+    padding-top: 3rem;
     -webkit-filter: drop-shadow(2px 2px 2px #222);
     filter: drop-shadow(2px 2px 2px #222);
     font-weight: 700;

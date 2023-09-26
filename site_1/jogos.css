@@ -84,7 +84,7 @@
 }
 
 .lista__item img {
-    width: 15rem;
+    width: 12rem;
     /* Alterado para garantir que a imagem caiba no contêiner do item da lista */
     height: auto;
     /* Mantém a proporção da imagem */
