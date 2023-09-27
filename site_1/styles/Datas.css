@@ -121,15 +121,43 @@
     padding: 0.3rem;
 }
 
+.Datas__PC {
+    display: none;
+}
+
+.Datas__lista_aviso {
+    text-align: center;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
 @media (min-width: 1024px) {
 
     .Datas {
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1rem;
         position: relative;
         margin-top: 4rem;
     }
+
+    .Datas__mobile {
+        display: none;
+    }
+
+    .Datas__PC {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .Datas__lista_titulo_lol {
+        font-size: 1.3rem;
+        font-weight: 500;
+        -webkit-filter: drop-shadow(2px 2px 2px #222);
+        filter: drop-shadow(2px 2px 2px #222);
+    }
+
 
     .Datas__titulo {
         font-size: 3rem;
@@ -164,6 +192,26 @@
 
     }
 
+    .lol {
+        border: 3px solid #107291;
+        background: linear-gradient(270deg, rgba(217, 150, 31, 1) 0%, rgba(185, 122, 3, 1) 43%, rgba(181, 126, 23, 1) 100%);
+    }
+
+    .lol:nth-child(odd) {
+        border: 2px solid var(--dourado);
+        background: linear-gradient(270deg, rgba(3, 151, 171, 1) 0%, rgba(0, 90, 130, 1) 100%);
+    }
+
+    ._Valorant {
+        border: 2px solid var(--dourado);
+        background: linear-gradient(270deg, rgba(3, 151, 171, 1) 0%, rgba(0, 90, 130, 1) 100%);
+    }
+
+    ._Valorant:nth-child(odd) {
+        border: 3px solid #107291;
+        background: linear-gradient(270deg, rgba(217, 150, 31, 1) 0%, rgba(185, 122, 3, 1) 43%, rgba(181, 126, 23, 1) 100%);
+    }
+
     .Datas__texto {
         font-weight: 700;
         text-align: center;
@@ -182,6 +230,12 @@
         font-size: 1.5rem;
     }
 
+    .Datas__lista_aviso {
+        text-align: center;
+        padding-bottom: 0.5rem;
+        font-size: 1.4rem;
+    }
+
 }
 
 @media (min-width: 1800px) {
@@ -198,7 +252,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 2rem;
+        gap: 1rem;
         width: 70%;
         position: relative;
         -webkit-filter: drop-shadow(2px 2px 2px #222);
@@ -219,7 +273,7 @@
 
     .borda {
         border: 2px solid var(--branco);
-        padding: 0.5rem 1rem;
+        padding: 0.6rem 1rem;
         border-radius: 50%;
         font-size: 2rem;
     }
@@ -241,5 +295,31 @@
         margin-top: 2rem;
         align-items: center;
         gap: 1.5rem;
+    }
+
+    .Datas__lista_aviso {
+        text-align: center;
+        padding-bottom: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .lol {
+        border: 3px solid #107291;
+        background: linear-gradient(270deg, rgba(217, 150, 31, 1) 0%, rgba(185, 122, 3, 1) 43%, rgba(181, 126, 23, 1) 100%);
+    }
+
+    .lol:nth-child(odd) {
+        border: 2px solid var(--dourado);
+        background: linear-gradient(270deg, rgba(3, 151, 171, 1) 0%, rgba(0, 90, 130, 1) 100%);
+    }
+
+    ._Valorant {
+        border: 2px solid var(--dourado);
+        background: linear-gradient(270deg, rgba(3, 151, 171, 1) 0%, rgba(0, 90, 130, 1) 100%);
+    }
+
+    ._Valorant:nth-child(odd) {
+        border: 3px solid #107291;
+        background: linear-gradient(270deg, rgba(217, 150, 31, 1) 0%, rgba(185, 122, 3, 1) 43%, rgba(181, 126, 23, 1) 100%);
     }
 }
