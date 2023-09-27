@@ -16,7 +16,7 @@
     /* Largura do pseudo-elemento */
     height: 100%;
     /* Altura do pseudo-elemento */
-    background-image: url(/site_1/img/quadradro.png);
+    background-image: url("../img/quadradro.png");
     /* Imagem de fundo */
     background-size: 100vw;
     /* Tamanho da imagem de fundo */
@@ -42,7 +42,7 @@
     /* Largura do pseudo-elemento */
     height: 100%;
     /* Altura do pseudo-elemento */
-    background-image: url(/site_1/img/fundo_tecnologia.png);
+    background-image: url("../img/fundo_tecnologia.png");
     /* Imagem de fundo */
     background-size: 100vw;
     /* Tamanho da imagem de fundo */
@@ -154,7 +154,7 @@
         /* Largura do pseudo-elemento */
         height: 100%;
         /* Altura do pseudo-elemento */
-        background-image: url(/site_1/img/quadradro.png);
+        background-image: url("../img/quadradro.png");
         /* Imagem de fundo */
         background-size: 50vw;
         /* Tamanho da imagem de fundo */
@@ -179,7 +179,7 @@
         /* Largura do pseudo-elemento */
         height: 100%;
         /* Altura do pseudo-elemento */
-        background-image: url(/site_1/img/fundo_tecnologia.png);
+        background-image: url("../img/fundo_tecnologia.png");
         /* Imagem de fundo */
         background-size: 70vw;
         /* Tamanho da imagem de fundo */
