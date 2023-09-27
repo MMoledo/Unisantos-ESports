@@ -17,7 +17,7 @@
 
 @media (min-width: 1024px) {
     .teste_2{
-        height: 21vh;
+        height: 25vh;
         scroll-snap-align: start;
     }
 }

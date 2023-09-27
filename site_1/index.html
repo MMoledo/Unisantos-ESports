@@ -14,37 +14,6 @@
         rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.testando').on('scroll', function () {
-                $('.Home, .Modalidades, .Informações, .Datas_link, .LeagueOfLegends, .Valorant').css('color', '#f2f2f2');
-                var scrollPos = $(this).scrollTop();
-                console.log(scrollPos);
-                if (scrollPos < 1000) {
-                    $('.Home').css('color', '#c99d4e');
-                } else {
-                    if (scrollPos > 1000 && scrollPos < 2000) {
-                        $('.Modalidades').css('color', '#c99d4e');
-                    } else {
-                        if (scrollPos > 2000 && scrollPos < 3000) {
-                            $('.Informações').css('color', '#c99d4e');
-                        } else {
-                            if (scrollPos > 3000 && scrollPos < 4000) {
-                                $('.Datas_link').css('color', '#c99d4e');
-                            } else {
-                                if (scrollPos > 4000 && scrollPos < 5000) {
-                                    $('.LeagueOfLegends').css('color', '#c99d4e');
-                                } else {
-                                    if (scrollPos > 5000 && scrollPos < 6000) {
-                                        $('.Valorant').css('color', '#c99d4e');
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                }
-            });
-        });
         document.addEventListener('DOMContentLoaded', function () {
             const mainContent = document.querySelector('.main_content');
             const secondaryContent = document.querySelector('.secondary_content');
@@ -90,14 +59,14 @@
         <header class="header">
             <img class="header__logo" src="img/logo_1.png" alt="Logo">
             <div class="header__pc">
-                <ul class="header__lista">
+                <ul class="header__lista">  
                     <li class="header__item"><a class="header__link Home" href="#Home">Home</a></li>
                     <li class="header__item"><a class="header__link Modalidades" href="#Modalidades">Modalidades</a>
                     </li>
                     <li class="header__item"><a class="header__link Informações" href="#Informações">Informações</a>
                     </li>
                     <li class="header__item"><a class="header__link Datas_link" href="#Datas">Datas</a></li>
-                    <li class="header__item"><a class="header__link LeagueOfLegends" href="#LOL">Chaveamento</a>
+                    <li class="header__item"><a class="header__link LeagueOfLegends" href="#Chaveamento">Chaveamento</a>
                     </li>
                 </ul>
             </div>
@@ -158,7 +127,7 @@
             </li>
         </ul>
     </section>
-    <section class="Datas teste" id="Datas">
+    <section class="Datas teste" id="Datas_link">
         <h2 class="Datas__titulo">Datas</h2>
         <ul class="Datas__lista">
             <li class="Datas__itens"><img src="img/cadastro.png">
@@ -181,7 +150,7 @@
             </li>
         </ul>
     </section>
-    <section class="chaveamento teste fundo_league" id="LOL">
+    <section class="chaveamento teste fundo_league" id="Chaveamento">
 
         <h2 class="jogos__titulo__Chave">Chaveamento <p class="titulo__league" id="titulo">League Of Legends</p>
         </h2>
@@ -299,6 +268,22 @@
             <li class="footer__texto">Telefone: (13) 3205-5555</p>
         </ul>
     </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(element => {
+                const intersecting = element.isIntersecting
+                console.log(element.target.id)
+
+                document.getElementsByClassName(`header__link ${element.target.id}`).item(0).style.color = intersecting ? "white" : ""
+            })
+        })
+        
+        observer.observe(document.getElementById("Home"))
+        observer.observe(document.getElementById("Modalidades"))
+        observer.observe(document.getElementById("Informações"))
+        observer.observe(document.getElementById("Datas_link"))
+    </script>
 </body>
 
 </html>

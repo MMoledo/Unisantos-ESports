@@ -67,3 +67,7 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(56, 56, 56);
 }
+
+.in-view {
+    background-color: yellow; /* Ou qualquer outra propriedade que você deseja alterar */
+}
