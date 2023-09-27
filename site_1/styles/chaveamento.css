@@ -12,8 +12,7 @@
     gap: 1rem;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+
 }
 
 .chaveamento__caixa h3 {
@@ -57,10 +56,11 @@
     font-weight: 500;
 }
 
-.Time__1{
+.Time__1 {
     font-size: 0.75rem;
 }
-.Time__2{
+
+.Time__2 {
     font-size: 0.75rem;
 }
 
@@ -95,6 +95,9 @@
     display: inline-block;
     width: 60px;
     height: 34px;
+    border: 2px solid var(--branco);
+    box-shadow: 20px 23px 29px -21px rgba(0, 0, 0, 0.75);
+    border-radius: 24px;
 }
 
 .switch input {
@@ -110,7 +113,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #c99d4e;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -122,13 +125,13 @@
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: var(--branco);
     -webkit-transition: .4s;
     transition: .4s;
 }
 
 input:checked+.slider {
-    background-color: #c99d4e;
+    background-color: #fd4556;
 }
 
 
@@ -153,9 +156,62 @@ input:checked+.slider:before {
     display: none;
 }
 
+.jogos__mobile {
+    display: block;
+}
+
+.jogos__pc {
+    display: none;
+}
+
+
 @media (min-width: 1024px) {
+    .chaveamento {
+        margin-top: 4rem;
+        width: 100vw;
+        height: auto;
+    }
+
     .jogos__titulo__Chave {
         font-size: 3.5rem;
+        padding-top: 3rem;
+        font-weight: 700;
+        text-align: center;
+        -webkit-filter: drop-shadow(2px 2px 2px #222);
+        filter: drop-shadow(2px 2px 2px #222);
+    }
+
+    .jogos__mobile {
+        display: none;
+    }
+
+    .jogos__pc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .jogos__lista {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem 1rem;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .Semi {
+        gap: 8rem;
+    }
+
+
+}
+
+@media (min-width: 1800px) {
+    .jogos__titulo__Chave {
+        font-size: 6rem;
         padding-top: 5rem;
         font-weight: 700;
         text-align: center;
@@ -163,4 +219,42 @@ input:checked+.slider:before {
         filter: drop-shadow(2px 2px 2px #222);
     }
 
+    .chaveamento__caixa h3 {
+        font-size: 3rem;
+        font-weight: 500;
+        -webkit-filter: drop-shadow(2px 2px 2px #222);
+        filter: drop-shadow(2px 2px 2px #222);
+    }
+
+    .jogos__itens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        background-color: #f2f2f2;
+        color: var(--preto);
+        padding: 1.5rem 1.5rem;
+        border-radius: 24px;
+        box-shadow: 20px 23px 29px -21px rgba(0, 0, 0, 0.75);
+    }
+
+    .Time__1 {
+        font-size: 1.25rem;
+    }
+
+    .Time__2 {
+        font-size: 1.25rem;
+    }
+
+    .X {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: rgb(78, 78, 78);
+    }
+    .jogos__pc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10rem;
+    }
 }

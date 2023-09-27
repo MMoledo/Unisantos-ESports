@@ -1,5 +1,4 @@
 .jogos {
-    background-size: 100vw;
     background-repeat: no-repeat;
     position: relative;
 }
@@ -17,7 +16,7 @@
     /* Largura do pseudo-elemento */
     height: 100%;
     /* Altura do pseudo-elemento */
-    background-image: url('img/quadradro.png');
+    background-image: url(/site_1/img/quadradro.png);
     /* Imagem de fundo */
     background-size: 100vw;
     /* Tamanho da imagem de fundo */
@@ -27,6 +26,7 @@
     /* Centralizar a imagem de fundo */
     z-index: -1;
     /* Posicionar abaixo do conteúdo do container pai */
+    
 }
 
 .jogos::after {
@@ -42,7 +42,7 @@
     /* Largura do pseudo-elemento */
     height: 100%;
     /* Altura do pseudo-elemento */
-    background-image: url('img/fundo_tecnologia.png');
+    background-image: url(/site_1/img/fundo_tecnologia.png);
     /* Imagem de fundo */
     background-size: 100vw;
     /* Tamanho da imagem de fundo */
@@ -107,14 +107,14 @@
 @media (min-width: 1024px) {
 
     .jogos {
-        padding-top: 4rem;
+        margin-top: 4rem;
     }
 
     .jogos__titulo {
         font-size: 3.5rem;
         -webkit-filter: drop-shadow(2px 2px 2px #222);
         filter: drop-shadow(2px 2px 2px #222);
-        padding: 4rem 0 4rem 0rem;
+        padding: 6rem 0 4rem 0rem;
         margin-bottom: 2rem;
         text-align: center;
         font-weight: 700;
@@ -154,7 +154,7 @@
         /* Largura do pseudo-elemento */
         height: 100%;
         /* Altura do pseudo-elemento */
-        background-image: url('img/quadradro.png');
+        background-image: url(/site_1/img/quadradro.png);
         /* Imagem de fundo */
         background-size: 50vw;
         /* Tamanho da imagem de fundo */
@@ -179,7 +179,7 @@
         /* Largura do pseudo-elemento */
         height: 100%;
         /* Altura do pseudo-elemento */
-        background-image: url('img/fundo_tecnologia.png');
+        background-image: url(/site_1/img/fundo_tecnologia.png);
         /* Imagem de fundo */
         background-size: 70vw;
         /* Tamanho da imagem de fundo */
@@ -201,4 +201,43 @@
         -webkit-filter: drop-shadow(5px 5px 5px #222);
         filter: drop-shadow(5px 5px 5px #222);
     }
+}
+
+@media (min-width: 1800px) {
+    .jogos__titulo {
+        font-size: 5rem;
+        -webkit-filter: drop-shadow(2px 2px 2px #222);
+        filter: drop-shadow(2px 2px 2px #222);
+        padding: 8rem 0 4rem 0rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-weight: 700;
+    }
+    .lista__item img {
+        width: 25rem;
+        /* Alterado para garantir que a imagem caiba no contêiner do item da lista */
+        height: auto;
+        /* Mantém a proporção da imagem */
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(5px 5px 5px #222);
+    }
+    .lista__item h3 {
+        text-align: center;
+        word-wrap: break-word;
+        font-weight: 500;
+        font-size: 3rem;
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(5px 5px 5px #222);
+        padding: 0.5rem;
+        /* Permite que o texto quebre para a próxima linha */
+        overflow-wrap: break-word;
+        /* Para navegadores que não suportam word-wrap */
+    }
+
+    .Valorant{
+        margin-bottom: 4rem;
+        width: 40rem;
+    }
+
+
 }

@@ -11,13 +11,13 @@
 }
 
 .teste_2{
-    height: 25vh;
+    height: 18vh;
     scroll-snap-align: start;
 }
 
 @media (min-width: 1024px) {
     .teste_2{
-        height: 25vh;
+        height: 30vh;
         scroll-snap-align: start;
     }
 }
