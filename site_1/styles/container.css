@@ -347,7 +347,6 @@
     .container__info {
         display: flex;
         flex-direction: row;
-        margin-top: 2rem;
     }
 
     .header__logo__pc {
