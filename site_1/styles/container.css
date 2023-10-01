@@ -7,6 +7,7 @@
     gap: 2rem;
 }
 
+
 .informacoes__titulo {
     text-align: center;
 }
@@ -124,13 +125,25 @@
 }
 
 .header__logo__unisantos {
-    width: 10rem;
+    width: 5rem;
     height: auto;
-    margin-bottom: 1rem;
 }
 
-.unisantos__logo {
+
+.unisantos__pinguim {
+    width: 6rem;
+    height: 6rem;
+}
+
+.logos__pc {
     display: none;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
 @media (min-width: 1024px) {
@@ -142,16 +155,10 @@
         text-align: center;
     }
 
-    .header__logo__unisantos {
+    .logos {
         display: none;
     }
 
-    .unisantos__logo {
-        padding-left: 5rem;
-        width: 12rem;
-        height: auto;
-        display: block;
-    }
 
     .container {
         padding-top: 5rem;
@@ -283,6 +290,23 @@
         z-index: -1;
     }
 
+    .logos__pc {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .unisantos__logo {
+        padding-left: 5rem;
+        width: 11rem;
+        height: auto;
+        display: block;
+    }
+
+    .unisantos__pinguim__pc {
+        width: 5rem;
+        height: 5rem;
+    }
 }
 
 @media (min-width: 1800px) {
@@ -351,8 +375,8 @@
     }
 
     .header__logo__pc {
-        width: 40%;
-        height: 40%;
+        width: 35%;
+        height: 35%;
         padding-right: 4rem;
         -webkit-filter: drop-shadow(2px 2px 2px #222);
         filter: drop-shadow(2px 2px 2px #222);
@@ -429,6 +453,23 @@
         /* Ajuste a opacidade conforme necessário, 0.5 é 50% de opacidade */
         transform: rotate(10deg) scale(1.5);
         z-index: -1;
+    }
+
+    .logos__pc {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .unisantos__logo {
+        padding-left: 5rem;
+        width: 20rem;
+        height: auto;
+
+    }
+    .unisantos__pinguim__pc {
+        width: 10rem;
+        height: 10rem;
     }
 
 }
