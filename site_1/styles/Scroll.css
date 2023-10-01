@@ -17,7 +17,7 @@
 
 @media (min-width: 1024px) {
     .Scroll_2{
-        height: 30vh;
+        height: 32vh;
         scroll-snap-align: start;
     }
 }
