@@ -112,6 +112,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     padding: 3rem 0 2rem 0;
 
 }
@@ -120,6 +121,16 @@
     margin-top: 1rem;
     width: 8rem;
     height: auto;
+}
+
+.header__logo__unisantos {
+    width: 10rem;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.unisantos__logo {
+    display: none;
 }
 
 @media (min-width: 1024px) {
@@ -131,8 +142,19 @@
         text-align: center;
     }
 
+    .header__logo__unisantos {
+        display: none;
+    }
+
+    .unisantos__logo {
+        padding-left: 5rem;
+        width: 12rem;
+        height: auto;
+        display: block;
+    }
+
     .container {
-        padding-top: 9rem;
+        padding-top: 5rem;
     }
 
     .header__pc,
@@ -264,6 +286,14 @@
 }
 
 @media (min-width: 1800px) {
+
+    .unisantos__logo {
+        padding-left: 5rem;
+        width: 20rem;
+        height: auto;
+
+    }
+
     .container__info h1 {
         font-size: 4rem;
         font-weight: 700;
